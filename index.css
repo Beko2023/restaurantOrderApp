@@ -1,0 +1,255 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  width: 600px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: 35% 85%;
+  color: #55505c;
+  background-image: url("vegetables.jpg");
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.1em;
+  text-shadow: #848497 1px 0 10px;
+  margin-left: 13px;
+}
+h2 {
+  font-size: 1.375em;
+  text-shadow: #848497 1px 0 10px;
+  margin-left: 13px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  border-bottom: solid 1px #d2d2d2;
+  padding: 20px 0;
+}
+
+.food-properties {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  width: 400px;
+  height: 150px;
+}
+
+.emoji {
+  font-size: 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.food-title,
+.cart-title {
+  color: #000;
+  font-family: Smythe;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px; /* 60% */
+  margin-bottom: 10px;
+}
+
+.ingredients {
+  color: #8b8b8b;
+  font-family: Smythe;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 10px;
+}
+
+.price,
+.total-cost {
+  color: #000;
+  font-family: Smythe;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+}
+
+.increment-btn {
+  display: block;
+  align-self: center;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  flex-shrink: 0;
+  border: 1px solid #dedede;
+  background-color: white;
+  cursor: pointer;
+}
+
+.increment-btn:hover {
+  background-color: #dedede;
+}
+
+.increment-btn:active {
+  background-color: #e450150e;
+}
+
+.shopping-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.cart-title {
+  margin-bottom: 60px;
+}
+
+.flex-container,
+.item-container,
+.total-price {
+  display: flex;
+}
+
+.total-price,
+.item-container {
+  width: 600px;
+  justify-content: space-between;
+}
+
+.remove-btn {
+  display: flex;
+  border: none;
+  background-color: white;
+  color: #bbbbbb;
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.item-container {
+  margin-bottom: 22px;
+}
+
+.total-price {
+  padding-top: 15px;
+  border-top: solid 1px black;
+}
+
+.order-btn {
+  display: block;
+  width: 600px;
+  background: #16db99;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: Verdana;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+h3 {
+  font-family: Verdana;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 50px 110px 50px 110px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  border: 1px solid #757575;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 540px;
+  width: 520px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+input {
+  display: flex;
+  color: #757575;
+  border: 1px solid #757575;
+  border-radius: 4px;
+  padding: 15px 25px 15px 25px;
+  height: 70px;
+  width: 475px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: Verdana;
+}
+
+input:last-child {
+  margin-bottom: 45px;
+}
+
+.pay-btn {
+  display: block;
+  width: 475px;
+  background: #16db99;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  font-family: Verdana;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.payment-statement {
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  font-family: Smythe;
+  font-weight: 400;
+  font-size: 25px;
+  background-color: #ecfdf5;
+  width: 500px;
+  margin: 50px auto;
+}
+
+.hidden {
+  display: none;
+}
